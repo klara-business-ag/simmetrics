@@ -25,7 +25,6 @@ import com.github.mpkorstanje.simmetrics.tokenizers.Tokenizers;
 import com.github.mpkorstanje.simmetrics.StringMetric;
 
 import static com.github.mpkorstanje.simmetrics.builders.StringMetricBuilder.with;
-import static com.github.mpkorstanje.simmetrics.tokenizers.Tokenizers.qGramWithPadding;
 
 /**
  * Utility class for string similarity metrics.
