@@ -4,7 +4,7 @@
 
 	<groupId>com.github.mpkorstanje</groupId>
 	<artifactId>simmetrics</artifactId>
-	<version>simmetrics-4.1.1.klara.1-SNAPSHOT</version>
+	<version>4.1.1.klara.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SimMetrics</name>
