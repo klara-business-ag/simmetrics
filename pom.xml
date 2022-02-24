@@ -61,6 +61,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<minimum.maven.version>3.5</minimum.maven.version>
+        <maven-bundle-plugin.version>5.1.1</maven-bundle-plugin.version>
+          <bnd.version.policy>[$(version;==;$(@)),$(version;+;$(@)))</bnd.version.policy>
 	</properties>
 
 	<scm>
@@ -189,6 +191,23 @@
 					<artifactId>maven-project-info-reports-plugin</artifactId>
 					<version>3.2.1</version>
 				</plugin>
+               <!-- OSGi Bundle -->
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <version>${maven-bundle-plugin.version}</version>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <instructions>
+                            <_versionpolicy>${bnd.version.policy}</_versionpolicy>
+                            <_removeheaders>Private-Package,Include-Resource,Embed-Dependency,
+                                    Created-By,Bnd-LastModified,Built-By,Tool</_removeheaders>
+                            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                            <Export-Package />
+                        </instructions>
+                    </configuration>
+                </plugin>
+                
 			</plugins>
 		</pluginManagement>
 
@@ -231,6 +250,17 @@
 					</execution>
 				</executions>
 			</plugin>
+            
+                 <!-- OSGi bundle -->
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <configuration>
+                    <instructions>
+                        <Export-Package />
+                    </instructions>
+                </configuration>
+            </plugin>
 
 		</plugins>
 	</build>
@@ -242,6 +272,12 @@
 			<activation/>
 			<build>
 				<plugins>
+                
+                       
+            
+       
+            
+        
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-source-plugin</artifactId>
