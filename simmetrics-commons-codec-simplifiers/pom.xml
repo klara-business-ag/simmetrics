@@ -40,19 +40,18 @@
 
 	<build>
 		<plugins>
-
+		<!-- OSGi bundle -->
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
 				<configuration>
-					<archive>
-						<manifestEntries>
-							<Automatic-Module-Name>com.github.mpkorstanje.simmetrics.simplifiers</Automatic-Module-Name>
-						</manifestEntries>
-					</archive>
+					<instructions>
+						<Export-Package>
+							com.github.mpkorstanje.simmetrics.*;version=${project.version};-noimport:=true
+						</Export-Package>
+					</instructions>
 				</configuration>
 			</plugin>
-
 		</plugins>
 	</build>
 

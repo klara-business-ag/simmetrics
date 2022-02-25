@@ -17,8 +17,8 @@
 
 	<modules>
 		<module>simmetrics-core</module>
-		<!--<module>simmetrics-commons-codec-simplifiers</module>
-		 <module>simmetrics-example</module> -->
+		<module>simmetrics-commons-codec-simplifiers</module>
+		<!-- <module>simmetrics-example</module> -->
 	</modules>
 
 	<licenses>
