@@ -17,8 +17,8 @@
 
 	<modules>
 		<module>simmetrics-core</module>
-		<module>simmetrics-commons-codec-simplifiers</module>
-		<!-- <module>simmetrics-example</module> -->
+		<!--<module>simmetrics-commons-codec-simplifiers</module>
+		 <module>simmetrics-example</module> -->
 	</modules>
 
 	<licenses>
@@ -192,7 +192,7 @@
 					<version>3.2.1</version>
 				</plugin>
 				
-				 <!-- OSGi Bundle -->
+				<!-- OSGi Bundle -->
 				<plugin>
 					<groupId>org.apache.felix</groupId>
 					<artifactId>maven-bundle-plugin</artifactId>
@@ -203,7 +203,6 @@
 							<_versionpolicy>${bnd.version.policy}</_versionpolicy>
 							<_removeheaders>Private-Package,Include-Resource,Embed-Dependency,Created-By,Bnd-LastModified,Built-By,Tool</_removeheaders>
 							<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-							<Export-Package />
 						</instructions>
 					</configuration>
 				</plugin>
