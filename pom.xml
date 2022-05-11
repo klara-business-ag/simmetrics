@@ -3,7 +3,7 @@
 
 	<groupId>com.github.mpkorstanje</groupId>
 	<artifactId>simmetrics</artifactId>
-	<version>4.1.1.klara.1</version>
+	<version>4.1.1.klara.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>SimMetrics</name>
@@ -68,7 +68,7 @@
 		<url>https://github.com/mpkorstanje/simmetrics</url>
 		<connection>scm:git:git://github.com/mpkorstanje/simmetrics.git</connection>
 		<developerConnection>scm:git:git@github.com:mpkorstanje/simmetrics.git</developerConnection>
-	  <tag>simmetrics-4.1.1.klara.1</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 	<dependencyManagement>
@@ -76,7 +76,7 @@
 			<dependency>
 				<groupId>com.github.mpkorstanje</groupId>
 				<artifactId>simmetrics-core</artifactId>
-				<version>4.1.1.klara.1</version>
+				<version>4.1.1.klara.2-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-codec</groupId>
