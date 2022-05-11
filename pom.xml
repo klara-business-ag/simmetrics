@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.github.mpkorstanje</groupId>
 	<artifactId>simmetrics</artifactId>
-	<version>4.1.1.klara.1-SNAPSHOT</version>
+	<version>4.1.1.klara.1</version>
 	<packaging>pom</packaging>
 
 	<name>SimMetrics</name>
@@ -69,14 +68,15 @@
 		<url>https://github.com/mpkorstanje/simmetrics</url>
 		<connection>scm:git:git://github.com/mpkorstanje/simmetrics.git</connection>
 		<developerConnection>scm:git:git@github.com:mpkorstanje/simmetrics.git</developerConnection>
-	</scm>
+	  <tag>simmetrics-4.1.1.klara.1</tag>
+  </scm>
 
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>com.github.mpkorstanje</groupId>
 				<artifactId>simmetrics-core</artifactId>
-				<version>4.1.1.klara.1-SNAPSHOT</version>
+				<version>4.1.1.klara.1</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-codec</groupId>
@@ -256,7 +256,7 @@
 		<!-- Runs the deployment to Nexus Central. Call with `mvn deploy -P release`  -->
 		<profile>
 			<id>release</id>
-			<activation/>
+			<activation />
 			<build>
 				<plugins>
 					<plugin>
