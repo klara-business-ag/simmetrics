@@ -34,7 +34,7 @@ class ColognePhoneticTest extends SimplifierTest {
 				new T("", ""),
 				new T("Travis", "2738"),
 				new T("Marcus", "6748"),
-				new T("Ozymandias", "086628"),
+                new T("Ozymandias", "08628"),
 				new T("Jones", "068"),
 				new T("Jenkins", "06468"),
 				new T("Trevor", "2737"),
